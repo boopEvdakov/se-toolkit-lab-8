@@ -76,16 +76,14 @@ Alternatively, the name of that branch (without `<` and `>`).
 
 ## Create a PR to the `main` branch in your fork
 
-Create a PR from [`<task-branch>`](#task-branch) to `main` **in your own fork** (not the upstream).
+[Create a PR](./github.md#create-a-pull-request-in-your-fork) from the branch [`<task-branch>`](#task-branch) to `main`. Replace:
 
-1. Go to your fork on `GitHub` and click `Pull requests` → `New pull request`.
-2. **Change the base repository to your fork.** By default, `GitHub` sets the base to the upstream repo (`inno-se-toolkit/<lab-repo-name>`). Click `base repository` and select `<your-github-username>/<lab-repo-name>`.
-3. Set the base branch to `main` and the compare branch to your [`<task-branch>`](#task-branch).
-4. Write the PR title and description. Link the issue by writing `Closes #<issue-number>` in the description.
-5. Click `Create pull request`.
+- [`<repo-name>`](./github.md#repo-name) with [`<lab-repo-name>`](./lab.md#lab-repo-name)
+- [`<branch>`](./git.md#branch) with [`<task-branch>`](./git-workflow.md#task-branch)
+- [`<your-github-username>`](./github.md#your-github-username)
 
 > [!WARNING]
-> Do **not** create PRs to the upstream `inno-se-toolkit` repo. Your PR must target `main` in **your fork**.
+> By default, `GitHub` sets the base repository to the upstream (`inno-se-toolkit`). You must **change the base repository to your own fork** (`<your-github-username>/<lab-repo-name>`) before creating the PR. Do **not** create PRs to the upstream repo.
 
 ## Get a PR review
 
