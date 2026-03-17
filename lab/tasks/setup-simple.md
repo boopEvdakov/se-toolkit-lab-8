@@ -270,7 +270,7 @@ The autochecker tests your agent against your **deployed backend on your VM**. Y
 
 ### 1.7. Set up LLM access (Qwen Code API)
 
-Your agent needs an LLM to answer questions. [Qwen Code](../../wiki/qwen.md#what-is-qwen-code) provides **1000 free requests per day** and works from Russia — no VPN or credit card needed.
+Your agent needs an LLM to answer questions. [Qwen Code](../../wiki/qwen-code.md#what-is-qwen-code) provides **1000 free requests per day** and works from Russia — no VPN or credit card needed.
 
 1. [Set up the Qwen Code API on your VM](../../wiki/qwen-code-api.md#set-up-the-qwen-code-api-remote).
 

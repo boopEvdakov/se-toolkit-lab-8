@@ -16,7 +16,7 @@
 
 <!-- TODO visualize -->
 
-The `Qwen Code` API is an [OpenAI-compatible API](./llm.md#openai-compatible-api) that uses the [`Qwen Code` credentials file](./qwen.md#qwen-code-credentials-file) to provide access to the [`Qwen` API](./qwen.md#qwen-api).
+The `Qwen Code` API is an [OpenAI-compatible API](./llm.md#openai-compatible-api) that uses the [`Qwen Code` credentials file](./qwen-code.md#qwen-code-credentials-file) to provide access to the [`Qwen` API](./qwen-code.md#qwen-api).
 
 The `Qwen Code` API is deployed using [`qwen-code-api`](https://github.com/inno-se-toolkit/qwen-code-api).
 
@@ -41,7 +41,7 @@ Complete these steps:
 
 3. [Install `pnpm`](./nodejs.md#install-pnpm).
 
-4. To install [`Qwen Code`](./qwen.md#what-is-qwen-code),
+4. To install [`Qwen Code`](./qwen-code.md#what-is-qwen-code),
 
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
@@ -49,13 +49,13 @@ Complete these steps:
    pnpm add -g @qwen-code/qwen-code
    ```
 
-5. [Open a chat with `Qwen Code` using the CLI](./qwen.md#open-a-chat-with-qwen-code-using-the-cli).
+5. [Open a chat with `Qwen Code` using the CLI](./qwen-code.md#open-a-chat-with-qwen-code-using-the-cli).
 
 6. Write `/auth` in the chat to [authenticate via Qwen OAuth](https://github.com/QwenLM/qwen-code?tab=readme-ov-file#authentication).
 
 7. Open the link in a browser to complete the authentication procedure.
 
-8. [Quit the chat with `Qwen Code`](./qwen.md#quit-the-chat-with-qwen-code).
+8. [Quit the chat with `Qwen Code`](./qwen-code.md#quit-the-chat-with-qwen-code).
 
 ### Clone the `Qwen Code` API repository (REMOTE)
 
@@ -159,7 +159,7 @@ Complete these steps:
      - [`<your-vm-ip-address>`](vm.md#your-vm-ip-address-placeholder) (LOCAL)
    - `<qwen-api-port>` with the value of `HOST_PORT`
    - `<qwen-api-key>` with the value of `QWEN_API_KEY`
-   - `<qwen-model>` with one of the [available models](./qwen.md#view-available-models)
+   - `<qwen-model>` with one of the [available models](./qwen-code.md#view-available-models)
 
 3. When you run it, the output should be similar to this:
 

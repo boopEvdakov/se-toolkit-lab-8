@@ -37,7 +37,7 @@ You may use any [coding agent](#what-is-a-coding-agent) with almost any [model](
 
 For this course, we recommend using free [coding agents](#what-is-a-coding-agent) and [free models](./llm.md#free-models) to save your money.
 
-Example: [`Qwen Code`](./qwen.md#what-is-qwen-code).
+Example: [`Qwen Code`](./qwen-code.md#what-is-qwen-code).
 
 ## Skill
 
