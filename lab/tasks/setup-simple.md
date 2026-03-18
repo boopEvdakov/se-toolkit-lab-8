@@ -26,7 +26,7 @@
 > The main changes are: a new repo, cleaning up Lab 6, deploying, and getting a Telegram bot token.
 
 > [!NOTE]
-> This lab needs your university email and GitHub alias in the Autochecker bot <https://t.me/auchebot>. If you haven't registered, do so now. If you want to change something, contact your TA.
+> This lab needs your university email and GitHub alias in the Autochecker bot <https://t.me/auchebot>. If you haven't registered, do so now. If you want to change something, contact your TA or try `/reset` in the autochecker bot.
 
 ### 1.1. Set up your fork
 
