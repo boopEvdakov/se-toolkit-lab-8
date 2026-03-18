@@ -57,23 +57,13 @@ Complete these steps:
 
 1. To allow [`SSH`](./ssh.md#what-is-ssh),
 
-   [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
+   1. [Run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
-   ```terminal
-   sudo ufw allow 22
-   ```
+      ```terminal
+      sudo ufw allow 22
+      ```
 
-2. When prompted for a password:
-
-   1. Type the password for the user `<user>`.
-
-      See [Set the password for the user `<user>` (REMOTE)](./vm-access.md#set-the-password-for-the-user-user-remote).
-
-      > 🟦 **Note**
-      >
-      > The shell won't show what you type.
-
-   2. Press `Enter`.
+   2. [Type the password for the user `<user>`](./vm-access.md#type-the-password-for-the-user-user-remote).
 
    The output should look like this:
 
@@ -87,7 +77,7 @@ Complete these steps:
    > Always allow `SSH` (port 22) before enabling `ufw`.
    > Otherwise, you will lock yourself out of your VM.
 
-3. To allow the [LMS API port](./lms-api.md#lms-api-port),
+2. To allow the [LMS API host port](./lms-api.md#lms-api-host-port),
 
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
@@ -104,7 +94,7 @@ Complete these steps:
    Rules updated (v6)
    ```
 
-4. To enable the [firewall](./computer-networks.md#firewall),
+3. To enable the [firewall](./computer-networks.md#firewall),
 
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
@@ -112,7 +102,7 @@ Complete these steps:
    sudo ufw enable
    ```
 
-5. When prompted `Command may disrupt existing ssh connections. Proceed with operation (y|n)?`:
+4. When prompted `Command may disrupt existing ssh connections. Proceed with operation (y|n)?`:
   
    1. Type `y`.
 
@@ -124,7 +114,7 @@ Complete these steps:
    Firewall is active and enabled on system startup
    ```
 
-6. To check the status,
+5. To check the status,
 
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
@@ -145,7 +135,7 @@ Complete these steps:
    42002 (v6)                 ALLOW       Anywhere (v6) 
    ```
 
-7. (Optional) To disable the firewall:
+6. (Optional) To disable the firewall:
 
    1. [Run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
