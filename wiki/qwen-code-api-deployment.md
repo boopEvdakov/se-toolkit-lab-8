@@ -18,13 +18,14 @@ This page describes how to deploy the [`Qwen Code` API](./qwen-code-api.md#what-
 
 Complete these steps:
 
-1. [Set up the `Qwen Code` CLI (REMOTE)](./qwen-code.md#set-up-the-qwen-code-cli-remote).
-2. [Clone the `Qwen Code` API repository (REMOTE)](#clone-the-qwen-code-api-repository-remote).
-3. [Pull the latest changes from the `Qwen Code` API repository (REMOTE)](#pull-the-latest-changes-from-the-qwen-code-api-repository-remote).
-4. [Enter the `Qwen Code` API repository directory (REMOTE)](#enter-the-qwen-code-api-repository-directory-remote).
-5. [Prepare the environment in the `Qwen Code` API repository (REMOTE)](#prepare-the-environment-in-the-qwen-code-api-repository-remote).
-6. [Start the `Qwen Code` API (REMOTE)](#start-the-qwen-code-api-remote).
-7. [Check that the `Qwen Code` API is accessible](./qwen-code-api.md#check-that-the-qwen-code-api-is-accessible) on the VM (REMOTE).
+1. [Connect to the VM as the user `admin`](./vm-access.md#connect-to-the-vm-as-the-user-user-local).
+2. [Set up the `Qwen Code` CLI (REMOTE)](./qwen-code.md#set-up-the-qwen-code-cli-remote).
+3. [Clone the `Qwen Code` API repository (REMOTE)](#clone-the-qwen-code-api-repository-remote).
+4. [Pull the latest changes from the `Qwen Code` API repository (REMOTE)](#pull-the-latest-changes-from-the-qwen-code-api-repository-remote).
+5. [Enter the `Qwen Code` API repository directory (REMOTE)](#enter-the-qwen-code-api-repository-directory-remote).
+6. [Prepare the environment in the `Qwen Code` API repository (REMOTE)](#prepare-the-environment-in-the-qwen-code-api-repository-remote).
+7. [Start the `Qwen Code` API (REMOTE)](#start-the-qwen-code-api-remote).
+8. [Check that the `Qwen Code` API is accessible](./qwen-code-api.md#check-that-the-qwen-code-api-is-accessible) on the VM (REMOTE).
 
 ### Clone the `Qwen Code` API repository (REMOTE)
 
