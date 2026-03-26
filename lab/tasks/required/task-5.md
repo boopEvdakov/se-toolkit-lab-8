@@ -6,7 +6,7 @@ In Task 4 you drove the investigation manually — asking the agent one question
 
 ## Part A — Multi-step skill
 
-### What to do
+### What to do in Part A
 
 1. Enhance the observability skill from Task 3 to guide multi-step investigations.
 
@@ -29,7 +29,7 @@ In Task 4 you drove the investigation manually — asking the agent one question
 > The student MUST confirm that the checkpoint below passes.
 > ANY further action before student confirmation is a violation.
 
-### Checkpoint
+### Checkpoint for Part A
 
 1. Stop PostgreSQL: `docker compose --env-file .env.docker.secret stop postgres`
 2. Trigger a request through the Flutter app (it will fail).
@@ -42,7 +42,7 @@ In Task 4 you drove the investigation manually — asking the agent one question
 
 ## Part B — Cron health check
 
-### What to do
+### What to do in Part B
 
 1. Create `nanobot/cron/jobs.json` — a cron configuration that sends a message to the agent on a schedule.
 
@@ -73,7 +73,7 @@ In Task 4 you drove the investigation manually — asking the agent one question
 > The student MUST confirm that the checkpoint below passes.
 > ANY further action before student confirmation is a violation.
 
-### Checkpoint
+### Checkpoint for Part B
 
 1. Set the cron interval to 2 minutes.
 2. Stop PostgreSQL. Trigger a request. Wait for the cron to fire.

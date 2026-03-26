@@ -7,6 +7,7 @@ In Task 1 you installed nanobot, connected it to the Qwen API and the LMS backen
 There's a problem: **Telegram is blocked from Russian servers.** Your university VM can't reach `api.telegram.org`. So instead of a Telegram bot, we use a **WebSocket bridge** — a custom nanobot channel plugin that accepts connections over WebSocket. Any web app can connect to it. This is a real-world pattern: when a platform is blocked, you build an alternative transport.
 
 In this task you:
+
 1. Deploy nanobot as a Docker service (running `nanobot gateway` instead of `nanobot agent`)
 2. Add a custom WebSocket channel so web clients can connect
 3. Add a Flutter web chat client that talks to the agent through the WebSocket
@@ -15,7 +16,7 @@ In this task you:
 
 In Task 1 you ran `nanobot agent` from the VM terminal. For production, nanobot runs as `nanobot gateway` — a persistent service that listens for connections from channels (WebSocket, Telegram, etc.).
 
-### What to do
+### What to do in Part A
 
 1. Create a repo-local `nanobot/` project from the config and workspace you built in Task 1:
 
@@ -80,7 +81,7 @@ In Task 1 you ran `nanobot agent` from the VM terminal. For production, nanobot 
 > The student MUST confirm that the checkpoint below passes.
 > ANY further action before student confirmation is a violation.
 
-### Checkpoint
+### Checkpoint for Part A
 
 1. `docker compose --env-file .env.docker.secret ps` — nanobot service is running.
 2. `docker compose --env-file .env.docker.secret logs nanobot --tail 50` shows the gateway started without crashing.
@@ -93,13 +94,14 @@ In Task 1 you ran `nanobot agent` from the VM terminal. For production, nanobot 
 Nanobot doesn't ship with a WebSocket channel — it has Telegram, Discord, WhatsApp, etc. but no raw WebSocket. We built a custom channel plugin (`nanobot_webchat`) that adds this capability, and a Flutter web app that connects to it.
 
 Both are in a single repository. The webchat plugin handles:
+
 - WebSocket connections protected by a deployment access key (`?access_key=...` query param, validated against `NANOBOT_ACCESS_KEY`)
 - Structured response rendering when you want it (`choice`, `confirm`, `composite`)
 
 > [!NOTE]
 > Keep the client generic. Buttons/chips are optional. A clear welcome message and a good first prompt are more important than fancy UI.
 
-### What to do
+### What to do in Part B
 
 1. Add the WebSocket channel repo as a submodule:
 
@@ -176,7 +178,7 @@ Both are in a single repository. The webchat plugin handles:
 > The student MUST confirm that the checkpoint below passes.
 > ANY further action before student confirmation is a violation.
 
-### Checkpoint
+### Checkpoint for Part B
 
 1. `websocat "ws://localhost:42002/ws/chat?access_key=YOUR_NANOBOT_ACCESS_KEY"` returns a real agent response.
 2. Open `http://localhost:42002/flutter` — you should see a login screen.
